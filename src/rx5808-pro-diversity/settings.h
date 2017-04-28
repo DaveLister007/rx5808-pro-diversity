@@ -29,8 +29,8 @@ SOFTWARE.
 
 // Choose the display you will be using
 // you will also have to uncomment the includes in the main project.
-//#define TVOUT_SCREENS
-#define OLED_128x64_ADAFRUIT_SCREENS
+#define TVOUT_SCREENS
+//#define OLED_128x64_ADAFRUIT_SCREENS
 
 // use the library from https://github.com/badzz/Adafruit_SH1106 before enabling
 //#define SH1106
@@ -41,15 +41,15 @@ SOFTWARE.
 
 // Feature Toggles
 #define USE_DIVERSITY
-#define USE_IR_EMITTER
+//#define USE_IR_EMITTER
 //#define USE_FLIP_SCREEN
 #define USE_BOOT_LOGO
 // You can use any of the arduino analog pins to measure the voltage of the battery
-//#define USE_VOLTAGE_MONITORING
+#define USE_VOLTAGE_MONITORING
 // Choose if you wish to use 8 additional Channels
 // 5362 MHz 5399 MHz 5436 MHz 5473 MHz 5510 MHz 5547 MHz 5584 MHz 5621 MHz
 // Local laws may prohibit the use of these frequencies use at your own risk!
-//#define USE_LBAND
+#define USE_LBAND
 #define USE_BOOT_CHECK
 #define USE_DIM_ON_SCREENSAVER
 
@@ -101,7 +101,7 @@ SOFTWARE.
     //    BAT- ----====----|----|
 
     #ifdef TVOUT_SCREENS
-        #define VBAT_PIN A4
+        #define VBAT_PIN A2
     #else
         #define VBAT_PIN A2
     #endif
